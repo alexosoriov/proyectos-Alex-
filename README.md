@@ -1,39 +1,62 @@
-# 🚀 Portafolio de Alex Osorio
+# 🌱 GestiónVerde
 
-Bienvenido a mi portafolio de proyectos de informática. Aquí reúno trabajos orientados a desarrollo de software, soluciones digitales, datos y seguridad.
+> Proyecto de portafolio enfocado en la digitalización, trazabilidad y gestión de operaciones de reciclaje y recolección.
 
-## 🌟 Proyecto destacado
+## 👋 Sobre el proyecto
 
-### 🌱 GestiónVerde
-Propuesta de plataforma para digitalizar y dar trazabilidad a operaciones de reciclaje y recolección municipal.
+**GestiónVerde** es una propuesta de plataforma para organizar y digitalizar una operación de recolección, conectando planificación, trabajo en terreno, seguimiento e informes en un mismo flujo.
 
-**Áreas trabajadas:** análisis de requisitos, actores y permisos, historias de usuario, criterios de aceptación, arquitectura, privacidad, seguridad, flujos operacionales e indicadores.
+El objetivo es transformar registros dispersos en información clara y útil para la gestión.
 
-➡️ [Ver presentación de GestiónVerde](./GestionVerde)
-
-## 🛡️ Otros proyectos
-
-### Security Montt
-Aplicación web orientada a seguridad comunitaria, geolocalización y reporte de incidentes.
-
-➡️ [Ver Security Montt](https://github.com/alexosoriov/Security-montt)
-
-### Página del Pingüino
-Proyecto inicial de frontend con HTML, CSS y JavaScript.
-
-➡️ [Ver proyecto](https://github.com/alexosoriov/pagina-del-ping-ino)
-
-## 🧠 Tecnologías y áreas que estoy desarrollando
-
-`Java` · `JavaScript` · `HTML` · `CSS` · `SQL` · `Firebase` · `Git/GitHub` · `PWA` · `Ciberseguridad` · `Power BI`
-
-## 👨‍💻 Sobre mí
-
-Soy **Alex Osorio**, estudiante del área informática. Me interesa crear soluciones que resuelvan problemas reales y seguir desarrollando habilidades en programación, bases de datos, ciberseguridad y análisis de sistemas.
-
-Actualmente estoy construyendo proyectos que combinan software, operación en terreno, geolocalización, seguridad y gestión de información.
+➡️ **[Ver presentación completa de GestiónVerde](./GestionVerde)**
 
 ---
 
-### 🔐 Nota de privacidad
-Los proyectos que puedan involucrar información sensible se presentan mediante documentación y material de portafolio. Credenciales, datos privados y configuraciones internas no deben publicarse.
+## 🎯 Qué problema busca resolver
+
+- Falta de trazabilidad durante las jornadas.
+- Dificultad para conocer el avance real de una ruta.
+- Incidencias y ausencias sin registro estructurado.
+- Información repartida entre distintos medios.
+- Reportes lentos o incompletos.
+- Poca visibilidad para supervisión y toma de decisiones.
+
+## 💡 Solución propuesta
+
+`Planificación → Ruta → Operación en terreno → Registro → Seguimiento → Cierre → Informe`
+
+La plataforma separa responsabilidades mediante roles y permisos, permitiendo que cada usuario acceda solo a las funciones necesarias.
+
+## 👥 Actores principales
+
+`Administrador` · `Jefatura` · `Supervisor` · `Chofer` · `Recolector` · `Vecino`
+
+## ✨ Funcionalidades consideradas
+
+- Gestión de jornadas y rutas.
+- Seguimiento operacional.
+- GPS y visualización de avance.
+- Registro de retiros, ausencias e incidencias.
+- Portal vecinal.
+- Avisos y comunicaciones.
+- Indicadores e informes.
+- Funcionamiento con conectividad intermitente.
+- Control de acceso según roles.
+
+## 🧠 Áreas trabajadas
+
+`Análisis de requisitos` · `Historias de usuario` · `Criterios de aceptación` · `Arquitectura` · `Privacidad` · `Seguridad` · `UX` · `Flujos operacionales` · `Indicadores`
+
+## 🔐 Privacidad
+
+La presentación pública no incluye credenciales, configuraciones internas ni datos personales. El diseño considera mínimo dato necesario y separación de permisos según rol.
+
+---
+
+### 👨‍💻 Autor
+
+**Alex Osorio**  
+Estudiante del área informática · Chile  
+2026
+
+> Proyecto de portafolio y propuesta de solución. No representa una plataforma oficial de una institución pública.
