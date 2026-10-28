@@ -7,15 +7,7 @@ Bienvenido a mi portafolio de proyectos de informática. Aquí reúno trabajos o
 ### 🌱 GestiónVerde
 Propuesta de plataforma para digitalizar y dar trazabilidad a operaciones de reciclaje y recolección municipal.
 
-**Áreas trabajadas**
-- Análisis de requisitos
-- Actores y permisos
-- Historias de usuario
-- Criterios de aceptación
-- Arquitectura de solución
-- Privacidad y seguridad
-- Diseño de flujos operacionales
-- Indicadores y reportes
+**Áreas trabajadas:** análisis de requisitos, actores y permisos, historias de usuario, criterios de aceptación, arquitectura, privacidad, seguridad, flujos operacionales e indicadores.
 
 ➡️ [Ver presentación de GestiónVerde](./GestionVerde)
 
@@ -25,6 +17,11 @@ Propuesta de plataforma para digitalizar y dar trazabilidad a operaciones de rec
 Aplicación web orientada a seguridad comunitaria, geolocalización y reporte de incidentes.
 
 ➡️ [Ver Security Montt](https://github.com/alexosoriov/Security-montt)
+
+### Página del Pingüino
+Proyecto inicial de frontend con HTML, CSS y JavaScript.
+
+➡️ [Ver proyecto](https://github.com/alexosoriov/pagina-del-ping-ino)
 
 ## 🧠 Tecnologías y áreas que estoy desarrollando
 
