@@ -1,62 +1,202 @@
 # 🌱 GestiónVerde
 
-> Proyecto de portafolio enfocado en la digitalización, trazabilidad y gestión de operaciones de reciclaje y recolección.
+![Estado](https://img.shields.io/badge/estado-prototipo%20de%20portafolio-2ea44f)
+![Enfoque](https://img.shields.io/badge/enfoque-trazabilidad%20%7C%20operación%20%7C%20seguridad-0969da)
+![Año](https://img.shields.io/badge/año-2026-6f42c1)
 
-## 👋 Sobre el proyecto
+> Plataforma conceptual orientada a digitalizar, ordenar y dar trazabilidad a operaciones de reciclaje y recolección mediante planificación, trabajo en terreno, seguimiento e informes.
 
-**GestiónVerde** es una propuesta de plataforma para organizar y digitalizar una operación de recolección, conectando planificación, trabajo en terreno, seguimiento e informes en un mismo flujo.
-
-El objetivo es transformar registros dispersos en información clara y útil para la gestión.
-
-➡️ **[Ver presentación completa de GestiónVerde](./GestionVerde)**
+**Autor:** Alex Osorio  
+**Tipo:** caso de estudio / prototipo de portafolio  
+**Código fuente:** no incluido en esta publicación pública
 
 ---
 
-## 🎯 Qué problema busca resolver
+## 🎯 El problema
 
-- Falta de trazabilidad durante las jornadas.
-- Dificultad para conocer el avance real de una ruta.
-- Incidencias y ausencias sin registro estructurado.
-- Información repartida entre distintos medios.
-- Reportes lentos o incompletos.
-- Poca visibilidad para supervisión y toma de decisiones.
+Una operación de recolección puede depender de registros manuales, coordinación dispersa y poca visibilidad sobre lo que ocurre durante una jornada. Eso dificulta responder preguntas simples pero importantes:
 
-## 💡 Solución propuesta
+- ¿Qué viviendas estaban programadas?
+- ¿Cuáles fueron atendidas?
+- ¿Dónde hubo ausencia o incidencia?
+- ¿Cómo avanza la ruta?
+- ¿Qué ocurrió durante la jornada?
+- ¿Qué indicadores quedan disponibles al cierre?
 
-`Planificación → Ruta → Operación en terreno → Registro → Seguimiento → Cierre → Informe`
+## 💡 La propuesta
 
-La plataforma separa responsabilidades mediante roles y permisos, permitiendo que cada usuario acceda solo a las funciones necesarias.
+**GestiónVerde** centraliza el flujo operacional y separa responsabilidades mediante roles y permisos.
 
-## 👥 Actores principales
+`Planificación → Asignación → Recorrido → Registro en terreno → Seguimiento → Cierre → Informe`
 
-`Administrador` · `Jefatura` · `Supervisor` · `Chofer` · `Recolector` · `Vecino`
+La idea es convertir el trabajo diario en información estructurada que pueda utilizarse para coordinación, supervisión y toma de decisiones.
+
+---
+
+## 🧭 Arquitectura funcional
+
+```mermaid
+flowchart LR
+    V[Vecino] --> PV[Portal Vecinal]
+    J[Jefatura] --> CM[Centro de Mando]
+    S[Supervisor] --> CM
+    C[Chofer] --> OT[Operación en Terreno]
+    R[Recolector] --> OT
+    A[Administrador] --> ADM[Administración]
+
+    PV --> DATA[(Datos operacionales)]
+    CM --> DATA
+    OT --> DATA
+    ADM --> DATA
+    DATA --> REP[Informes e indicadores]
+```
+
+### Áreas principales
+
+| Área | Objetivo |
+|---|---|
+| **Portal Vecinal** | Información, solicitudes, avisos e historial autorizado |
+| **Centro de Mando** | Jornadas, rutas, usuarios, seguimiento e indicadores |
+| **Operación en Terreno** | Navegación, GPS, viviendas, retiros e incidencias |
+| **Administración** | Roles, permisos, configuración y auditoría |
+| **Informes** | Consolidación de resultados para seguimiento y análisis |
+
+---
+
+## 👥 Actores del sistema
+
+| Actor | Responsabilidad principal |
+|---|---|
+| **Administrador** | Configuración, usuarios, permisos y auditoría |
+| **Jefatura** | Planificación de jornadas, rutas, equipo e informes |
+| **Supervisor** | Seguimiento del avance e incidencias |
+| **Chofer** | Consulta de ruta, navegación y posición operacional |
+| **Recolector** | Registro de retiros, ausencias, observaciones e incidencias |
+| **Vecino** | Solicitudes, avisos e historial autorizado |
+
+---
 
 ## ✨ Funcionalidades consideradas
 
-- Gestión de jornadas y rutas.
-- Seguimiento operacional.
-- GPS y visualización de avance.
-- Registro de retiros, ausencias e incidencias.
-- Portal vecinal.
-- Avisos y comunicaciones.
-- Indicadores e informes.
-- Funcionamiento con conectividad intermitente.
-- Control de acceso según roles.
-
-## 🧠 Áreas trabajadas
-
-`Análisis de requisitos` · `Historias de usuario` · `Criterios de aceptación` · `Arquitectura` · `Privacidad` · `Seguridad` · `UX` · `Flujos operacionales` · `Indicadores`
-
-## 🔐 Privacidad
-
-La presentación pública no incluye credenciales, configuraciones internas ni datos personales. El diseño considera mínimo dato necesario y separación de permisos según rol.
+- Gestión de jornadas de recolección.
+- Administración de rutas y sectores.
+- Registro de viviendas y puntos de atención.
+- Seguimiento de recorrido y avance operacional.
+- Uso de GPS y mapas.
+- Registro de retiro, ausencia e incidencia.
+- Portal vecinal y comunicaciones.
+- Indicadores e informes por jornada, sector y periodo.
+- Control de acceso según rol.
+- Consideración de conectividad intermitente y sincronización posterior.
 
 ---
 
-### 👨‍💻 Autor
+## 🧾 Ejemplo de requisito
+
+**RF-07 — Registrar resultado de una vivienda**
+
+**Historia de usuario:**  
+Como **recolector**, quiero registrar si una vivienda realizó entrega, estuvo ausente o presentó una incidencia, para que la jornada quede correctamente registrada.
+
+**Criterios de aceptación:**
+
+1. El usuario debe estar autenticado.
+2. Solo puede registrar viviendas pertenecientes a su jornada asignada.
+3. Debe poder seleccionar `Realizada`, `Sin retiro` o `Incidencia`.
+4. El sistema registra fecha y hora del evento.
+5. El registro queda asociado a la jornada correspondiente.
+6. Si no existe conexión, el evento puede quedar pendiente de sincronización.
+
+**Datos sensibles involucrados:** dirección, coordenadas, observaciones y cualquier dato asociado a una vivienda o persona.
+
+---
+
+## 🔐 Privacidad y seguridad
+
+El diseño considera el principio de **mínimo dato necesario** y separación de permisos según rol.
+
+No deberían exponerse públicamente:
+
+- nombres completos de vecinos;
+- teléfonos o correos personales;
+- direcciones particulares;
+- coordenadas privadas;
+- historial individual de atención;
+- identificadores internos de usuario;
+- información operacional restringida.
+
+Las vistas públicas deberían utilizar información agregada siempre que sea posible.
+
+---
+
+## 📊 Indicadores propuestos
+
+- viviendas programadas;
+- viviendas atendidas;
+- ausencias;
+- incidencias;
+- porcentaje de avance;
+- duración de la jornada;
+- kilómetros recorridos;
+- material o kilos retirados cuando corresponda;
+- resultados por sector y periodo.
+
+> Estos indicadores corresponden al diseño del sistema y no se presentan como resultados reales de una implementación municipal.
+
+---
+
+## 🧠 Mi trabajo en el proyecto
+
+En GestiónVerde he trabajado en:
+
+- análisis del problema;
+- levantamiento y organización de requisitos;
+- definición de actores y permisos;
+- historias de usuario y criterios de aceptación;
+- identificación de datos sensibles;
+- diseño de flujos operacionales;
+- arquitectura funcional;
+- experiencia de usuario;
+- definición de indicadores e informes;
+- consideraciones de seguridad y privacidad.
+
+---
+
+## 🚀 Estado del proyecto
+
+**Fase actual:** prototipo / propuesta de piloto.
+
+El objetivo de un piloto sería validar si la solución mejora:
+
+- trazabilidad;
+- coordinación;
+- seguimiento de rutas;
+- calidad de la información;
+- generación de reportes;
+- comunicación con usuarios.
+
+### Próximos pasos
+
+- pruebas con escenarios reales de operación;
+- validación de permisos por rol;
+- pruebas de conectividad intermitente;
+- medición de indicadores del piloto;
+- incorporación de evidencia visual del flujo completo.
+
+---
+
+## 📚 Documentación
+
+- [Arquitectura y flujo](./docs/ARQUITECTURA.md)
+- [Requisitos e historias de usuario](./docs/REQUISITOS.md)
+- [Privacidad y seguridad](./docs/SEGURIDAD.md)
+
+---
+
+## 👨‍💻 Autor
 
 **Alex Osorio**  
 Estudiante del área informática · Chile  
 2026
 
-> Proyecto de portafolio y propuesta de solución. No representa una plataforma oficial de una institución pública.
+> **Aviso:** GestiónVerde es un proyecto de portafolio y una propuesta de solución. No representa una plataforma oficial de una municipalidad ni de otra institución pública.
