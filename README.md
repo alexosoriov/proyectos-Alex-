@@ -3,12 +3,28 @@
 ![Estado](https://img.shields.io/badge/estado-prototipo%20de%20portafolio-2ea44f)
 ![Enfoque](https://img.shields.io/badge/enfoque-trazabilidad%20%7C%20operación%20%7C%20seguridad-0969da)
 ![Año](https://img.shields.io/badge/año-2026-6f42c1)
+[![Demo](https://img.shields.io/badge/🌐_DEMO-VER%20GESTIÓNVERDE-1f883d?style=for-the-badge)](https://gestionverde-90fa1.web.app)
 
-> Plataforma conceptual orientada a digitalizar, ordenar y dar trazabilidad a operaciones de reciclaje y recolección mediante planificación, trabajo en terreno, seguimiento e informes.
+> Plataforma orientada a digitalizar, ordenar y dar trazabilidad a operaciones de reciclaje y recolección mediante planificación, trabajo en terreno, seguimiento e informes.
 
 **Autor:** Alex Osorio  
 **Tipo:** caso de estudio / prototipo de portafolio  
+**Demo pública:** [gestionverde-90fa1.web.app](https://gestionverde-90fa1.web.app)  
 **Código fuente:** no incluido en esta publicación pública
+
+---
+
+## 🖥️ Vista del sistema
+
+<a href="https://gestionverde-90fa1.web.app">
+  <img src="https://image.thum.io/get/width/1200/crop/850/maxAge/24/noanimate/https://gestionverde-90fa1.web.app/" alt="Vista previa en vivo de GestiónVerde" width="100%" />
+</a>
+
+<p align="center">
+  <strong>👆 Haz clic en la imagen para abrir GestiónVerde</strong>
+</p>
+
+> La imagen superior se genera automáticamente desde la versión pública desplegada del proyecto, por lo que puede actualizarse cuando cambie la interfaz.
 
 ---
 
@@ -164,7 +180,11 @@ En GestiónVerde he trabajado en:
 
 ## 🚀 Estado del proyecto
 
-**Fase actual:** prototipo / propuesta de piloto.
+**Fase actual:** prototipo / propuesta de piloto con versión web demostrable.
+
+### 🌐 Probar GestiónVerde
+
+👉 **[Abrir la demo pública](https://gestionverde-90fa1.web.app)**
 
 El objetivo de un piloto sería validar si la solución mejora:
 
@@ -181,7 +201,7 @@ El objetivo de un piloto sería validar si la solución mejora:
 - validación de permisos por rol;
 - pruebas de conectividad intermitente;
 - medición de indicadores del piloto;
-- incorporación de evidencia visual del flujo completo.
+- ampliar la galería visual con vistas representativas sin datos sensibles.
 
 ---
 
