@@ -5,9 +5,10 @@
 ![Año](https://img.shields.io/badge/año-2026-6f42c1)
 [![Demo](https://img.shields.io/badge/🌐_DEMO-VER%20GESTIÓNVERDE-1f883d?style=for-the-badge)](https://gestionverde-90fa1.web.app)
 
-> Plataforma orientada a digitalizar, ordenar y dar trazabilidad a operaciones de reciclaje y recolección mediante planificación, trabajo en terreno, seguimiento e informes.
+> **Proyecto desarrollado en 2026 como propuesta para la Municipalidad de Puerto Montt**, orientado a digitalizar, ordenar y dar trazabilidad a operaciones de reciclaje y recolección mediante planificación, trabajo en terreno, seguimiento e informes.
 
 **Autor:** Alex Osorio  
+**Contexto:** propuesta de proyecto para la Municipalidad de Puerto Montt · 2026  
 **Tipo:** caso de estudio / prototipo de portafolio  
 **Demo pública:** [gestionverde-90fa1.web.app](https://gestionverde-90fa1.web.app)  
 **Código fuente:** no incluido en esta publicación pública
@@ -180,7 +181,7 @@ En GestiónVerde he trabajado en:
 
 ## 🚀 Estado del proyecto
 
-**Fase actual:** prototipo / propuesta de piloto con versión web demostrable.
+**Fase actual:** prototipo / propuesta de piloto con versión web demostrable, desarrollada en 2026 para un contexto municipal en Puerto Montt.
 
 ### 🌐 Probar GestiónVerde
 
@@ -219,4 +220,4 @@ El objetivo de un piloto sería validar si la solución mejora:
 Estudiante del área informática · Chile  
 2026
 
-> **Aviso:** GestiónVerde es un proyecto de portafolio y una propuesta de solución. No representa una plataforma oficial de una municipalidad ni de otra institución pública.
+> **Aviso:** GestiónVerde fue desarrollado en 2026 como propuesta para la Municipalidad de Puerto Montt y se publica aquí como proyecto de portafolio. Esta publicación no representa una plataforma oficial ni una comunicación institucional de la Municipalidad.
